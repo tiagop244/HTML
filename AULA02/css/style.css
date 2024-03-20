@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+body {
+  /* background: url(../img/fundo\ bom.jpg); */
+  background: #ace2e1;
+  color: #98abee;
+}
+
+a {
+  text-decoration: none;
+  color: #008dda;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+h1.textocentro {
+  text-align: center;
+  margin-top: 0;
+  padding: 10px;
+}
+.fundolindo {
+  background: #f7eedd;
+  padding: 5px;
+  border: solid 1px #000;
+  border-radius: 30px 0px;
+}
+h1 a {
+  background: #ffffff;
+  padding: 3px;
+  border: solid 3px #13daca;
+}
+h3 {
+  color: #000;
+}
+p {
+  color: #000;
+}
