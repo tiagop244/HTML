@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de dinheiro</title>
+    <body>
+      <h1>Tiago legal</h1>
+    </body>
+    <style>
+      body {
+        background: #f67;
+        color: black;
+        text-shadow: 2px -2px 5px black;
+      }
+      h1 {
+        color: rgb(1, 1, 1);
+        text-shadow: 2px -2px 5px rgb(48, 56, 48);
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <h2>Alerta de mensagem !</h2>
+  <p style="text-align: center">
+    <button onclick="alerta()" style="">🔔Alerta!🔔</button>
+  </p>
+  <h2>Altere a cor do fundo clicando em uma da cores</h2>
+  <p style="text-align: center">
+    <button onclick="azul()">azul</button>
+    <button onclick="verde()">verde</button>
+    <button onclick="vermelho()">vermelho</button>
+    
+    <script>
+      function alerta() {
+    var nome = prompt("Olá, informe seu nome")
+    alert (`Olá ${nome}!`)
+  }
+      function vermelho() {
+        document.getElementsByTagName("body")[0].style.background = "#f00";
+      }
+      function verde() {
+        document.getElementsByTagName("body")[0].style.background = "#0f0";
+      }
+      function azul() {
+        document.getElementsByTagName("body")[0].style.background = "#00f";
+      }
+    </script>
+  </p>
+
+  
+</html>
