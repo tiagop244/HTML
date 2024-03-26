@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <h1 class="textocentro fundolindo">
-    <a href="https://github.com/tiagop244" target="_blank">Git-Hub</a>
-    <a href="https://instagram.com/"target="_blank">Instagram</a>
-    <a href="https://google.com"target="_blank">Google</a>
-    <a href="./index.html"target="_blank">Home</a>
-        <button onclick="alerta()">🚨ALERTA!🚨</button>
+      <a href="https://github.com/tiagop244" target="_blank">Git-Hub</a>
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+      <a href="https://google.com" target="_blank">Google</a>
+      <a href="./index.html" target="_blank">Home</a>
+      <button onclick="alerta()">🚨ALERTA!🚨</button>
     </h1>
-    <form action="">
-        <h3>entre em contato</h3>
-        <p>Ficaremos felizes em atendelo</p>
-        <input type="text" size="40" placeholder="Nome:"  />
-        <input type="date" size="40" placeholder="Data:"  />
-        <input type="email" size="40" placeholder="E-mail:" />
-        <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem:"></textarea>
-        <input type="button" value="Enviar">
+    <form class="textocentro" onsubmit="console.log(`Enviou`)">
+      <h3>entre em contato</h3>
+      <p>Ficaremos felizes em atendelo</p>
+      <input id="nome" type="text" size="40" placeholder="Nome:" />
+      <input id="email" type="email" size="40" placeholder="E-mail:" />
+      <textarea
+        name=""
+        id="areaTexto"
+        cols="40"
+        rows="10"
+        placeholder="Mensagem:"
+        minlength="10"
+        required
+      ></textarea>
+      <input type="button" onclick="enviar()" value="Enviar" />
     </form>
-        
-</body>
+    <span id="resposta"></span>
+  </body>
+  <script src="./js/script.js"></script>
 </html>
